@@ -1,0 +1,24 @@
+/******************************************************************
+//								//
+// CSE 6230 Project						//
+// Anjali Ashok, Shri Hari, Poojan Shah				//
+//								//
+*****************************************************************/
+
+
+Use the given Makefile to compile the code. This implementation uses Cilk for the parallel implementation of the code.
+
+Type 'make' on the console to compile the program. Then run 'main.o' with the following three command line argument:
+
+1) Image Size - For 16x16 image, give 16
+2) Create Image - Give 0 if you dont want to create a new image. 1 if you want to create a new image. The code uses 'image.raw' fil to read the image. When a new image is created, that file is overwritten. So make sure that your file has the correct size of image
+3) Use parallel - Give 0 if you want to run the Serial code. Give 1 if you want to run the parallel implementation of the code.
+
+
+
+
+We have also provided some file to test our code. 'SmallTest.cpp' compares the result of parallel impementation with a known result of some small image. Use 'make smalltest' to compile it . Use 'smalltest.o' to run it.
+
+
+'Test.cpp' first runs the serial code and then the parallel code and then compares their output. It takes image size as a command line argument. To compile it, use 'make test' and then run it using 'test.o'. 
+
